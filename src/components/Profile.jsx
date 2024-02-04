@@ -5,7 +5,7 @@ const Profile = () => {
 
   const {language} = useStateContext();
   return (
-    <div className='flex w-full'>
+    <section className='flex w-full'>
       <div className='w-full flex flex-col justify-center items-center cursor-default'>
         <h1 className='font-poppins font-semibold text-white text-[50px] sm:text-[80px] mt-5 sm:mt-[1%]'>{language.profile.title}</h1>
         <h2 className='font-poppins font-semibold text-white text-[45px] sm:text-[70px] mt-4 sm:mt-[0.7%]'>{language.profile.name}</h2>
@@ -24,7 +24,7 @@ const Profile = () => {
 
       </div>
       
-    </div>
+    </section>
   )
 }
 

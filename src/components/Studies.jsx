@@ -15,11 +15,11 @@ const Studies = () => {
   const { language, setLanguage } = useStateContext();
 
   return (
-    <div className='w-full flex flex-col justify-center items-center overflow-auto cursor-default'>
+    <section className='w-full flex flex-col justify-center items-center overflow-auto cursor-default'>
       <h1 className='font-poppins font-semibold text-white text-[50px] sm:text-[80px] mt-4 sm:mt-[1%]'>{language.studies.title}</h1>
-      <div className='w-full flex flex-col justify-center items-center'>
+      <section className='w-full flex flex-col justify-center items-center'>
         <h1 className='text-white sm:text-[52px] text-[42px] font-poppins font-semibold mt-4 sm:mt-[0.8%]'>{language.studies.knowledge}</h1>
-        <div className='w-[95%] flex flex-wrap mt-4 sm:w-[70%] sm:flex-row sm:flex-nowrap'>
+        <aside className='w-[95%] flex flex-wrap mt-4 sm:w-[70%] sm:flex-row sm:flex-nowrap'>
             <li className='w-[50%] sm:w-full mt-3 list-none'>
               <div className='flex flex-col flex-grow justify-center items-center'>
                 <div className='flex w-[60px] h-[60px] rounded-full bg-white justify-center items-center'>
@@ -84,9 +84,9 @@ const Studies = () => {
                 <p className='text-white text-[24px] font-poppins cursor-default mt-2 hover:font-semibold hover:text-[28px] duration-300'>SQL</p>
               </div>
             </li>
-        </div>
-      </div>
-      <div className='w-full flex flex-col items-center sm:mt-[3%] mt-6'>
+        </aside>
+      </section>
+      <section className='w-full flex flex-col items-center sm:mt-[3%] mt-6'>
         <h1 className='text-white text-center sm:text-[50px] text-[38px] font-poppins font-semibold'>{language.studies.at}</h1>
 
         <h3 className='text-white text-center sm:text-[32px] text-[26px] font-poppins sm:mt-[1%] mt-4'>{language.studies.pS}</h3>
@@ -94,8 +94,8 @@ const Studies = () => {
 
         <h3 className='text-white text-center sm:text-[32px] text-[26px] font-poppins sm:mt-[1.7%] mt-6'>{language.studies.hS}</h3>
         <p className='text-white text-center sm:text-[22px] text-[20px] font-poppins mt-2 sm:mb-0 mb-8'>{language.studies.hSInfo}</p>
-      </div>
-    </div>
+      </section>
+    </section>
   )
 }
 

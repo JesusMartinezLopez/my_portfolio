@@ -5,7 +5,7 @@ import {Navbar, Main, Profile, Studies, Info} from './components';
 
 const App = () => {
   return (
-    <div className="bg-backgroundImg bg-cover bg-center w-full h-[100vh] overflow-auto">
+    <main className="bg-backgroundImg bg-cover bg-center w-full h-[100vh] overflow-auto">
       <BrowserRouter>
         <section className="w-full h-19 bg-transparent mt-10">
           <Navbar />
@@ -19,7 +19,7 @@ const App = () => {
           </Routes>
         </section>
       </BrowserRouter>
-    </div>
+    </main>
   )
 }
 

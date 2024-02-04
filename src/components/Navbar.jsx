@@ -25,8 +25,8 @@ const Navbar = () => {
   
 
   return (
-    <div className='flex flex-col'>
-      <div className="flex items-center justify-between">
+    <nav className='flex flex-col'>
+      <section className="flex items-center justify-between">
         <Link to='/'>
           <h1 className="font-poppins text-white capitalize text-[30px] sm:text-[42px] sm:ml-4 font-semibold ml-6"><p className="ml-4">{language.title}</p></h1>
         </Link>
@@ -82,8 +82,8 @@ const Navbar = () => {
           </Tooltip>
           
         </div>
-      </div>
-      <div className={`${lang ? 'sm:flex sm:flex-col' : 'hidden '} w-[10%] min-w-[10%] h-[105px] left-[87%] top-[11%] border-[1px] border-white bg-dimWhite sm:fixed hidden`}>
+      </section>
+      <section className={`${lang ? 'sm:flex sm:flex-col' : 'hidden '} w-[10%] min-w-[10%] h-[105px] left-[87%] top-[11%] border-[1px] border-white bg-dimWhite sm:fixed hidden`}>
         <div 
           className='h-[55px] w-full flex flex-row items-center cursor-pointer hover:bg-dimWhite'
           onClick={() => setLanguage(language => spanish, changeLanguage((prev) => !prev))}
@@ -98,9 +98,9 @@ const Navbar = () => {
           <img src={ukicon} alt="Uk Icon" className='h-[22px] ml-[12px]' />
           <label className='font-semibold text-[20px] text-black ml-[25px] cursor-pointer'>English</label>
         </div>
-      </div>
+      </section>
 
-      <div className={`${activeMenu ? 'flex' : 'hidden'} sm:hidden w-full min-h-[370px] relative mt-4 bg-white`}>
+      <section className={`${activeMenu ? 'flex' : 'hidden'} sm:hidden w-full min-h-[370px] relative mt-4 bg-white`}>
           <ul className='list-none flex flex-col w-full'>
             <NavLink to='/Profile' key='Profile'>
             <li>
@@ -151,9 +151,9 @@ const Navbar = () => {
             </NavLink>
             
           </ul>
-        </div>
+        </section>
 
-    </div>
+    </nav>
     
     
   )

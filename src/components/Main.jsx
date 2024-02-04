@@ -9,8 +9,8 @@ const Main = () => {
   const { language, setLanguage } = useStateContext();
 
   return (
-    <div className="flex flex-col w-full bg-transparent pt-6 sm:pt-[3%] overflow-auto">
-      <div className='w-full flex flex-col justify-center items-center cursor-default'>
+    <main className="flex flex-col w-full bg-transparent pt-6 sm:pt-[3%] overflow-auto">
+      <section className='w-full flex flex-col justify-center items-center cursor-default'>
         <h1 className="font-poppins font-bold text-white text-[46px] sm:text-[90px] sm:mt-0 mt-[8%]">{language.main.mainTitle}</h1>
         <div className='flex flex-col justify-center items-center text-center'>
           <p className="font-poppins font-semibold text-white text-[34px] sm:text-[64px] sm:mt-0 mt-[4%]">{language.main.description}</p>
@@ -39,9 +39,9 @@ const Main = () => {
             </button>
           </a>
         </div>
-      </div>
+      </section>
     
-  </div>
+  </main>
   )
 }
 
